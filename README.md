@@ -1,6 +1,5 @@
 .git Workshop
 ================
-
 Overview
 ------------
 Two silly project directories exist.  
@@ -27,10 +26,42 @@ Start something new...
 10. add your username / email
 		-  `git config --global user.email "irock@spambot.com"`
 		-  `git config --global user.name  "Ian Rock"
-		-  confirm:   `git config --global`  or view the file: `git config --global -e`
+		-  confirm:   `git config --global` or view the file: `git config --global -e`
 11. edit test.md  `echo "I love git" >> test.md`
 12. commit
 13. look at log to see your username / email. 
+
+Branch development
+------------------
+1. create new branch `git branch feature_x`
+2. move HEAD to new branch `git checkout feature_x`
+3. commit new change
+4. see diffs from master `git diff master..feature_x`
+		- note: shortcut is `git diff master`
+		- compare:  `git diff feature_x..master`
+5. merge properly
+		- **best practice** merge master into feature branch FIRST. 
+		- on feature_x:  `git merge master`
+		- switch to master branch
+		- `git merge feature_x`
+		- this seems trivial now, but you will see the value later.
+		- remove feature branch `git branch -d feature_x`
+6. repeat 1-5, except in step 5 instead of `git merge master` do `git rebase master`
+		- did you notice the difference? 
+
+Social Coding
+--------------
+1. show remotes `git remote -v`
+		- nothing! 
+2. checkout workshop project `git clone <url> [folder]`
+		- leave [folder] empty and git creates folder for you.  
+		- use '.' (dot) for current folder. 
+3. authentication failure?   add SSH Keys:
+		- https://help.github.com/articles/generating-ssh-keys
+		- upload public key
+4. clone again
+5. show remotes
+6. show local and remote tracking branches `git branch -a`
 
 
 
