@@ -1,5 +1,6 @@
-Tasks 
+TIP: turn off word wrap in your text editor
 
+IDEAS:
 1. put a devil on homers shoulder (file ./berkeleyUnixDaemon)
 2. change color of homers left collar
 3. give homer glasses

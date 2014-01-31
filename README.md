@@ -6,7 +6,38 @@ Overview
 Two silly project directories exist.  
 Each one can be used to mock a real world .git workflow. 
 
-Each folder contains a TODO.md file with tasks to complete. 
+Each folder contains a TODO.md file with tasks to complete.  
+Use these projects to go through processes below. 
+
+This document is structured with a training guide of steps to follow
+
+Workshop
+========
+Start something new...
+-----------------------
+1. mkdir sandbox & cd sandbox
+2. Initialize git. `git init`
+3. Create text file  `touch test.md`
+4. Show workspace status `git status`
+5. add text file `git add test.md`
+6. `git status`
+7. commit **staged files**  `git commit -m "my first commit!"`
+8. `git status` - we're all clean!
+9. show history  `git log`
+10. add your username / email
+		-  `git config --global user.email "irock@spambot.com"`
+		-  `git config --global user.name  "Ian Rock"
+		-  confirm:   `git config --global`  or view the file: `git config --global -e`
+11. edit test.md  `echo "I love git" >> test.md`
+12. commit
+13. look at log to see your username / email. 
+
+
+
+
+Advanced
+=========
+
 
 Feature Branch Process
 ----------------------
