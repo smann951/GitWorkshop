@@ -3,7 +3,7 @@ story =[' This is a story of Tony Montana, a honey badger, and .....'];
 story.push("----------------------");
 
 #body 
-story.push("\u202EOnce upon a time".encode('utf-8');
+story.push("\u202e Once upon a time".gsub(/\\u[\da-f]{4}/i) { |m| [m[-4..-1].to_i(16)].pack('U') });
 
 
 #conclusion
