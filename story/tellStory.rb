@@ -3,7 +3,7 @@ story =[' This is a story of Tony Montana, a honey badger, and .....'];
 story.push("----------------------");
 
 #body 
-story.push("\u202EOnce upon a time");
+story.push("\u202EOnce upon a time".encode('utf-8');
 
 
 #conclusion
