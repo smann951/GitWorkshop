@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 story =[' This is a story of Tony Montana, a honey badger, and .....'];
+story.push(" a bullfrog named bobby");
 story.push("----------------------");
 
 #body 
