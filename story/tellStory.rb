@@ -4,7 +4,7 @@ story.push("----------------------");
 
 #body 
 
-
+story.push('They were bent on world domination.');
 
 #conclusion
 
